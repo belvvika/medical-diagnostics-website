@@ -1,0 +1,23 @@
+{% extends 'website/base.html' %}
+{% block content %}
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        {% for contact in object_list %}
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text">{{ contact.first_name }}</p>
+              <p class="card-text">{{ contact.phone_number }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
