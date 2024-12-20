@@ -27,3 +27,4 @@ class CompanyListView(ListView):
 
 class DoctorsListView(ListView):
     model = Doctors
+
